@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;700&family=Titillium+Web:wght@300;400;600;700;900&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap');
 
 /* Media Queries */
 
@@ -38,14 +38,14 @@ body {
 } */
 
 p {
-  font-family: "Poiret One", cursive;
+  font-family: 'Poiret One', cursive;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   font-size: 1.5rem;
 }
 
 h1,
 h2 {
-  font-family: "Limelight", cursive;
+  font-family: 'Limelight', cursive;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -288,6 +288,10 @@ h2 {
   z-index: 5;
 }
 
+/* Animation umbrella */
+.animation-umbrella {
+  margin-bottom: 2rem;
+}
 .icon-umbrella {
   color: #00ddff;
   filter: drop-shadow(0 0 0.75rem rgba(0, 221, 255, 0.74));
@@ -300,26 +304,26 @@ h2 {
 @keyframes umbrella {
   0% {
     transform: rotate(0deg);
-    left: 10%;
+    left: -40%;
   }
   25% {
     transform: rotate(20deg);
-    left: 10%;
+    left: -40%;
   }
   50% {
     transform: rotate(0deg);
-    left: 90%;
+    left: 40%;
   }
   55% {
     transform: rotate(0deg);
-    left: 90%;
+    left: 40%;
   }
   70% {
     transform: rotate(0deg);
-    left: 90%;
+    left: 40%;
   }
   100% {
     transform: rotate(-360deg);
-    left: 10%;
+    left: -40%;
   }
 }
