@@ -205,22 +205,6 @@ h2 {
   border-radius: 5px;
 } */
 
-.img-zoom img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 5px;
-  border: solid 1px #00ddff;
-  box-shadow: 0px 0px 66px 8px rgba(0, 221, 255, 0.8);
-  border-width: medium;
-  filter: saturate(0.5);
-  /* transition: ease-in transform 0.3s; */
-  /* background: linear-gradient(
-    to bottom,
-    rgba(0, 221, 255, 0.5) 100%,
-    rgba(0, 221, 255, 0.5) 100%
-  ); */
-}
-
 /* .img-zoom img:hover {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -305,7 +289,7 @@ h2 {
 .icon-umbrella {
   color: #00ddff;
   filter: drop-shadow(0 0 0.75rem rgba(0, 221, 255, 0.74));
-  font-size: 3vw;
+  font-size: 2rem;
   position: relative;
   animation: umbrella 8s infinite;
   animation-direction: alternate-reverse;
@@ -338,18 +322,6 @@ h2 {
   }
 }
 
-/* Media Queries bout section*/
-@media only screen and (min-width: 600px) {
-  div.section-id {
-    padding-inline: 6rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  div.section-id {
-    padding-inline: 10rem;
-  }
-}
-
 /* About me section */
 .section-id {
   padding: 2rem;
@@ -362,25 +334,83 @@ h2 {
 }
 .heading {
   color: white;
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
   width: 20%;
   white-space: nowrap;
   /* text-decoration: underline #00ddff; */
 }
 
-.line2 {
-  height: 0.1rem;
+.heading-line::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 300px;
+  margin-left: 20px;
+  height: 1px;
   background-color: #00ddff;
-  display: inline-block;
-  width: 75%;
-  opacity: 0.8;
-  border-radius: 0.15rem;
-  box-shadow: 5px -1px 66px 8px rgba(0, 221, 255, 0.74);
 }
+
 .about-me {
   margin: auto;
   color: white;
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 50px;
+}
+
+.img-zoom img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 5px;
+  border: solid 1px #00ddff;
+  box-shadow: 0px 0px 66px 8px rgba(0, 221, 255, 0.8);
+  border-width: medium;
+  filter: saturate(0.5);
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  margin: 20px 0px 0px;
+  padding: 0;
+  color: white;
+  list-style: none;
+}
+
+.skills-list li::before {
+  content: '▹ ';
+  color: #00ddff;
+}
+
+/* Media Queries bout section*/
+@media only screen and (max-width: 600px) {
+  div.about-me {
+    grid-template-columns: 1fr;
+  }
+  div.heading-line::after {
+    display: none;
+  }
+  .icon-umbrella {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  div.section-id {
+    padding-inline: 6rem;
+  }
+  div.heading-line::after {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  div.section-id {
+    padding-inline: 10rem;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  div.heading-line::after {
+    width: 200px;
+  }
 }
