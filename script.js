@@ -1,56 +1,23 @@
 'use strict';
 
 // Setting variables
-const about = document.querySelector('.about');
 const overlay = document.querySelector('.overlay');
+const cardContact = document.querySelector('.card-contact');
 
-const btnOpenAbout = document.querySelector('.open-about');
-const btnCloseAbout = document.querySelector('.close-about');
+const btnOpenContactForm = document.querySelector('.open-contact-form');
+const btnCloseContactForm = document.querySelector('.close-contact-form');
 
-// opening about section
-btnOpenAbout.addEventListener('click', function () {
-  about.classList.remove('hidden');
+// Open contact form
+btnOpenContactForm.addEventListener('click', function () {
+  cardContact.classList.remove('hidden');
   overlay.classList.remove('hidden');
 });
 
-// closing about section
-const closeAbout = function () {
-  about.classList.add('hidden');
+// Close contact form
+const closeContact = function () {
+  cardContact.classList.add('hidden');
   overlay.classList.add('hidden');
 };
 
-btnCloseAbout.addEventListener('click', closeAbout);
-overlay.addEventListener('click', closeAbout);
-
-// Setting variables for Skills section
-const skills = document.querySelector('.skills');
-const btnOpenSkills = document.querySelector('.open-skills');
-const btnCloseSkills = document.querySelector('.close-skills');
-
-// Opening Skills section
-btnOpenSkills.addEventListener('click', function () {
-  skills.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-});
-
-// Closing Skills section
-const closeSkills = function () {
-  skills.classList.add('hidden');
-  overlay.classList.add('hidden');
-};
-
-btnCloseSkills.addEventListener('click', closeSkills);
-overlay.addEventListener('click', closeSkills);
-
-let messageArray = ['INGO KNORR'];
-let textPosition = 0;
-let speed = 100;
-
-typewriter = () => {
-  document.querySelector('#message').innerHTML =
-    messageArray[0].substring(0, textPosition) + '<span>\u25ae</span>';
-
-  if (textPosition++ != messageArray[0].length) setTimeout(typewriter, speed);
-};
-
-window.addEventListener('load', typewriter);
+btnCloseContactForm.addEventListener('click', closeContact);
+overlay.addEventListener('click', closeContact);

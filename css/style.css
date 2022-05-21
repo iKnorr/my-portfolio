@@ -130,14 +130,60 @@ h3 {
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
 
-/* hidden cards */
+/* hidden contact form */
+.card-contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
 
-.card {
+  color: white;
   background: linear-gradient(rgba(26, 24, 53, 0.8), rgba(255, 132, 216, 0.8));
   padding: 2rem;
   margin: 0.7rem 0;
-  width: 30%;
+  border-radius: 3rem;
   box-shadow: 0px 0px 66px 5px rgba(0, 221, 255, 0.5);
+  border: solid #00ddff;
+  border-width: 0.4rem;
+  z-index: 10;
+}
+
+.close-contact-form {
+  position: absolute;
+  top: 0.2rem;
+  right: 1rem;
+  font-size: 3rem;
+  color: #00ddff;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.btn-submit {
+  color: #00ddff;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: transparent;
+  border: solid #00ddff;
+}
+
+/* closing button */
+.btn-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #00ddff;
+  font-size: 1.5rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all ease 1s;
+}
+
+.btn-close:hover {
+  transform: scale(1.2);
 }
 
 /* Hidden class */
@@ -151,7 +197,6 @@ h3 {
   animation-duration: 1s;
 }
 
-/* Fade ANIMATION */
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -215,21 +260,6 @@ h3 {
 
 .git {
   color: #f44d27;
-}
-/* closing button */
-.btn-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  color: #00ddff;
-  font-size: 1.5rem;
-  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.4);
-  cursor: pointer;
-  transition: all ease 1s;
-}
-
-.btn-close:hover {
-  transform: scale(1.2);
 }
 
 /* Overlay */
@@ -324,8 +354,8 @@ h3 {
   width: 100%;
   max-width: 250px;
   border-radius: 3rem;
-  border: solid #00ddff;
   box-shadow: 0px 0px 32px 8px rgba(0, 221, 255, 0.6);
+  border: solid #00ddff;
   border-width: 0.4rem;
   filter: saturate(0.5);
 }

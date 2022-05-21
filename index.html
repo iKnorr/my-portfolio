@@ -12,6 +12,7 @@
     ></script>
   </head>
   <body>
+    <!-- Nav -->
     <div class="nav" id="main">
       <a href="https://github.com/iKnorr" target="_blank">
         <i class="fa-brands fa-github"></i>
@@ -24,6 +25,7 @@
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
     </div>
+    <!-- Main -->
     <div class="container-top">
       <div class="header">
         <div class="animation-umbrella">
@@ -40,9 +42,10 @@
             <a href="/#my-projects"> my projects </a>
           </div>
           <div class="link">
-            <a href="#"> contact </a>
+            <a href="#" class="open-contact-form"> get in touch</a>
           </div>
         </div>
+
         <!-- <div class="links">
             <div class="cards">
               <div>
@@ -99,7 +102,28 @@
             </div>
           </div> -->
       </div>
+
+      <!-- Contact form -->
+      <div class="card-contact fade hidden">
+        <button class="close-contact-form btn-close">&times;</button>
+        <h2>contact me</h2>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>your name: <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>your email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>your message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit" class="btn-submit">submit</button>
+          </p>
+        </form>
+      </div>
     </div>
+    <!-- About me section -->
     <div class="section-id">
       <div class="heading-line" id="about-me">
         <h2 class="heading">about me</h2>
