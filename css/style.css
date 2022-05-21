@@ -22,7 +22,8 @@ body {
 p,
 li,
 a,
-input {
+input,
+textarea {
   font-family: 'Poiret One', cursive;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -142,6 +143,7 @@ input {
   border-radius: 0.5rem;
   border: solid #00ddff;
   border-width: 0.2rem;
+  text-shadow: none;
 }
 
 textarea {
@@ -154,6 +156,7 @@ textarea {
   border: solid #00ddff;
   border-width: 0.2rem;
   resize: none;
+  text-shadow: none;
 }
 
 .btn-submit {
@@ -256,21 +259,21 @@ textarea {
 }
 
 /* Animation umbrella */
-.animation-umbrella {
+.animation-palmtree {
   margin-bottom: 2rem;
 }
 
-.icon-umbrella {
+.icon-palmtree {
+  position: relative;
   width: 5rem;
   color: #00ddff;
   filter: drop-shadow(0 0 0.75rem rgba(0, 221, 255, 0.74));
   font-size: 2rem;
-  position: relative;
-  animation: umbrella 8s infinite;
-  animation-direction: alternate-reverse;
+  animation: palmtree 8s infinite;
+  animation-direction: alternate;
 }
 
-@keyframes umbrella {
+@keyframes palmtree {
   0% {
     transform: rotate(0deg);
     left: -40%;
@@ -280,11 +283,7 @@ textarea {
     left: -40%;
   }
   50% {
-    transform: rotate(0deg);
-    left: 40%;
-  }
-  55% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
     left: 40%;
   }
   70% {
