@@ -259,7 +259,9 @@ textarea {
 .animation-umbrella {
   margin-bottom: 2rem;
 }
+
 .icon-umbrella {
+  width: 5rem;
   color: #00ddff;
   filter: drop-shadow(0 0 0.75rem rgba(0, 221, 255, 0.74));
   font-size: 2rem;
