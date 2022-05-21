@@ -21,7 +21,8 @@ body {
 
 p,
 li,
-a {
+a,
+input {
   font-family: 'Poiret One', cursive;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -131,6 +132,51 @@ h3 {
 }
 
 /* hidden contact form */
+.contact-me {
+  margin-bottom: 1rem;
+}
+input {
+  display: block;
+  margin: 0.5rem auto 1rem auto;
+  font-weight: bolder;
+  border-radius: 0.5rem;
+  border: solid #00ddff;
+  border-width: 0.2rem;
+}
+
+textarea {
+  display: block;
+  margin: 1rem auto 1rem auto;
+  width: 75%;
+  height: 3rem;
+  font-weight: bolder;
+  border-radius: 0.5rem;
+  border: solid #00ddff;
+  border-width: 0.2rem;
+  resize: none;
+}
+
+.btn-submit {
+  margin: 1rem;
+  padding: 0.6rem 2rem;
+  color: #00ddff;
+  font-family: 'Limelight', cursive;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 1.5em 0 #00ddff, 0 0 1.5em 0 #00ddff;
+  border-radius: 20px;
+  background: transparent;
+  border: solid #00ddff;
+  border-width: 0.2em;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background: #00ddff;
+  color: #1a1835;
+  text-shadow: none;
+}
+
 .card-contact {
   position: absolute;
   top: 50%;
@@ -140,8 +186,8 @@ h3 {
 
   color: white;
   background: linear-gradient(rgba(26, 24, 53, 0.8), rgba(255, 132, 216, 0.8));
-  padding: 2rem;
-  margin: 0.7rem 0;
+  padding: 2rem 0;
+  /* margin: 0.7rem 0; */
   border-radius: 3rem;
   box-shadow: 0px 0px 66px 5px rgba(0, 221, 255, 0.5);
   border: solid #00ddff;
@@ -160,30 +206,21 @@ h3 {
   background: none;
 }
 
-.btn-submit {
-  color: #00ddff;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  background: transparent;
-  border: solid #00ddff;
-}
-
 /* closing button */
 .btn-close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: -1rem;
+  right: -2rem;
   color: #00ddff;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  transition: all ease 1s;
+  transition: all ease 0.7s;
 }
 
 .btn-close:hover {
-  transform: scale(1.2);
+  transform: rotate(-360deg);
+  filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.74));
 }
 
 /* Hidden class */
@@ -204,62 +241,6 @@ h3 {
   to {
     opacity: 1;
   }
-}
-
-/* Window about */
-.about {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  z-index: 10;
-
-  border-radius: 5px;
-  text-align: start;
-  /* box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3); */
-}
-
-/* Window Skills */
-.skills {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  z-index: 10;
-  border-radius: 5px;
-}
-
-.skills-grid {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.icon-skills {
-  padding-top: 1rem;
-  font-size: 4rem;
-}
-
-.bootstrap {
-  color: #9f76f1;
-}
-
-.js {
-  color: #fcdc00;
-}
-
-.css {
-  color: #2b98cb;
-}
-
-.html {
-  color: #e54b20;
-}
-
-.git {
-  color: #f44d27;
 }
 
 /* Overlay */
@@ -343,7 +324,7 @@ h3 {
 }
 
 .about-me {
-  margin: auto;
+  margin-bottom: 2rem;
   color: white;
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -358,6 +339,10 @@ h3 {
   border: solid #00ddff;
   border-width: 0.4rem;
   filter: saturate(0.5);
+}
+
+.skills {
+  color: white;
 }
 
 .skills-list {
