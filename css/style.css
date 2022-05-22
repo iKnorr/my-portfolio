@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap');
 
+/* Colors */
+:root {
+  --white: white;
+  --light-blue: #00ddff;
+  --pink: #ff84d8;
+  --blue: #1a1835;
+}
+
 /* html and body */
 * {
   margin: 0;
@@ -11,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient(#1a1835 12%, #ff84d8);
+  background: linear-gradient(var(--blue) 12%, var(--pink));
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
@@ -46,14 +54,14 @@ h3 {
 .nav a {
   margin: 1rem 2.5rem;
   text-decoration: none;
-  color: white;
+  color: var(--white);
   font-size: 1.5rem;
   transition: all 0.7s ease;
   filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.74));
 }
 
 .nav a:hover {
-  color: #00ddff;
+  color: var(--light-blue);
   opacity: 0.8;
   transform: rotate(1turn);
   filter: drop-shadow(0 0 0.75rem rgba(0, 221, 255, 0.74));
@@ -83,7 +91,7 @@ h3 {
   text-align: center;
 }
 .header {
-  color: white;
+  color: var(--white);
   margin: 0;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -107,7 +115,7 @@ h3 {
 .line {
   height: 0.2rem;
   /* background-color: #f72e44; */
-  background-color: #00ddff;
+  background-color: var(--light-blue);
   display: inline-block;
   width: 85%;
   opacity: 0.8;
@@ -122,12 +130,12 @@ h3 {
 }
 
 .link a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 
 .link:hover a {
-  color: #00ddff;
+  color: var(--light-blue);
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
@@ -141,7 +149,7 @@ input {
   margin: 0.5rem auto 1rem auto;
   font-weight: bolder;
   border-radius: 0.5rem;
-  border: solid #00ddff;
+  border: solid var(--light-blue);
   border-width: 0.2rem;
   text-shadow: none;
 }
@@ -153,7 +161,7 @@ textarea {
   height: 3rem;
   font-weight: bolder;
   border-radius: 0.5rem;
-  border: solid #00ddff;
+  border: solid var(--light-blue);
   border-width: 0.2rem;
   resize: none;
   text-shadow: none;
@@ -162,21 +170,21 @@ textarea {
 .btn-submit {
   margin: 1rem;
   padding: 0.6rem 2rem;
-  color: #00ddff;
+  color: var(--light-blue);
   font-family: 'Limelight', cursive;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 1.5em 0 #00ddff, 0 0 1.5em 0 #00ddff;
+  box-shadow: inset 0 0 1.5em 0 var(--light-blue), 0 0 1.5em 0 var(--light-blue);
   border-radius: 20px;
   background: transparent;
-  border: solid #00ddff;
+  border: solid var(--light-blue);
   border-width: 0.2em;
 }
 
 .btn-submit:hover,
 .btn-submit:focus {
-  background: #00ddff;
-  color: #1a1835;
+  background: var(--light-blue);
+  color: var(--blue);
   text-shadow: none;
 }
 
@@ -187,13 +195,13 @@ textarea {
   transform: translate(-50%, -50%);
   width: 50%;
 
-  color: white;
+  color: var(--white);
   background: linear-gradient(rgba(26, 24, 53, 0.8), rgba(255, 132, 216, 0.8));
   padding: 2rem 0;
   /* margin: 0.7rem 0; */
   border-radius: 3rem;
   box-shadow: 0px 0px 66px 5px rgba(0, 221, 255, 0.5);
-  border: solid #00ddff;
+  border: solid var(--light-blue);
   border-width: 0.4rem;
   z-index: 10;
 }
@@ -203,7 +211,7 @@ textarea {
   top: 0.2rem;
   right: 1rem;
   font-size: 3rem;
-  color: #00ddff;
+  color: var(--light-blue);
   cursor: pointer;
   border: none;
   background: none;
@@ -214,7 +222,7 @@ textarea {
   position: absolute;
   top: -1rem;
   right: -2rem;
-  color: #00ddff;
+  color: var(--light-blue);
   font-size: 1.9rem;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.4);
   cursor: pointer;
@@ -266,7 +274,7 @@ textarea {
 .icon-palmtree {
   position: relative;
   width: 5rem;
-  color: #00ddff;
+  color: var(--light-blue);
   filter: drop-shadow(0 0 0.75rem rgba(0, 221, 255, 0.74));
   font-size: 2rem;
   animation: palmtree 8s infinite;
@@ -310,7 +318,7 @@ textarea {
   margin-bottom: 1rem;
 }
 .heading {
-  color: white;
+  color: var(--white);
   white-space: nowrap;
 }
 
@@ -321,12 +329,12 @@ textarea {
   width: 300px;
   margin-left: 3rem;
   height: 1px;
-  background-color: #00ddff;
+  background-color: var(--light-blue);
 }
 
 .about-me {
   margin-bottom: 2rem;
-  color: white;
+  color: var(--white);
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 50px;
@@ -337,13 +345,13 @@ textarea {
   max-width: 250px;
   border-radius: 3rem;
   box-shadow: 0px 0px 32px 8px rgba(0, 221, 255, 0.6);
-  border: solid #00ddff;
+  border: solid var(--light-blue);
   border-width: 0.4rem;
   filter: saturate(0.5);
 }
 
 .skills {
-  color: white;
+  color: var(--white);
 }
 
 .skills-list {
@@ -352,13 +360,13 @@ textarea {
   gap: 0px 10px;
   margin: 20px 0px 0px;
   padding: 0;
-  color: white;
+  color: var(--white);
   list-style: none;
 }
 
 .skills-list li::before {
   content: '▹ ';
-  color: #00ddff;
+  color: var(--light-blue);
 }
 
 /* Section projects */
@@ -370,7 +378,7 @@ textarea {
 .heading-projects {
   display: flex;
   align-items: center;
-  color: white;
+  color: var(--white);
   margin-bottom: 3rem;
   white-space: nowrap;
 }
@@ -382,7 +390,7 @@ textarea {
   width: 300px;
   margin-left: 3rem;
   height: 1px;
-  background-color: #00ddff;
+  background-color: var(--light-blue);
 }
 
 .project-main {
@@ -393,7 +401,7 @@ textarea {
 }
 
 .project-content {
-  color: white;
+  color: var(--white);
 }
 .project-img-heading {
   margin-bottom: 1rem;
@@ -403,13 +411,12 @@ textarea {
   max-width: 500px;
   box-shadow: 0px 0px 66px 5px rgba(0, 221, 255, 0.8);
   border-radius: 3rem;
-  border: solid #00ddff;
+  border: solid var(--light-blue);
   border-width: 0.4rem;
   cursor: pointer;
 }
 
 .project-image:hover img {
-  /* filter: grayscale(); */
   opacity: 0.5;
 }
 
@@ -422,7 +429,7 @@ textarea {
 
 .project-links a {
   text-decoration: none;
-  color: #00ddff;
+  color: var(--light-blue);
   margin-right: 1rem;
   font-size: clamp(1.3rem, 2.5vw, 1.8rem);
   transition: all 0.7s ease;
@@ -430,7 +437,7 @@ textarea {
 }
 
 .project-links a:hover {
-  color: #00ddffe4;
+  color: var(--light-blue);
   opacity: 0.8;
   transform: rotate(1turn);
 }
@@ -441,22 +448,21 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1a1835;
-  /* box-shadow: 0rem 0px 17px 7px rgb(250 250 250 / 54%); */
+  background-color: var(--blue);
   box-shadow: inset 0px 0px 66px 5px rgba(0, 221, 255, 0.5);
 }
 
 .footer a {
   margin: 1rem 2.5rem;
   text-decoration: none;
-  color: #00ddff;
+  color: var(--light-blue);
   font-size: 1.5rem;
   transition: all 0.7s ease;
   filter: drop-shadow(0 0 0.75rem rgba(0, 221, 255, 0.74));
 }
 
 .footer a:hover {
-  color: white;
+  color: var(--white);
   opacity: 0.8;
   transform: rotate(1turn);
   filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.74));
