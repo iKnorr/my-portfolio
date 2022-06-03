@@ -86,6 +86,9 @@ h3 {
   .icon-umbrella {
     font-size: 1rem;
   }
+  .img-zoom img {
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 600px) {
