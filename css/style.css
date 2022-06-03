@@ -2,10 +2,13 @@
 
 /* Colors */
 :root {
-  --white: white;
-  --light-blue: #00ddff;
-  --pink: #ff84d8;
-  --blue: #1a1835;
+  --white: #fff;
+  /* --light-blue: #00ddff; */
+  --light-blue: #f5fdff;
+  --blue: #5271ff;
+  /* --pink: #ff84d8; */
+  --pink: #ff00ff;
+  /* --blue: #1a1835; */
 }
 
 /* html and body */
@@ -19,12 +22,19 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient(var(--blue) 12%, var(--pink));
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/images/skyline.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
+  height: 100vh;
   margin: 0;
   position: relative;
-  height: 100%;
+  /* background: linear-gradient(var(--blue) 12%, var(--pink)); */
+  /* background-attachment: fixed; */
+  /* width: 100%; */
+  /* height: 100%; */
 }
 
 p,
@@ -33,15 +43,25 @@ a,
 input,
 textarea {
   font-family: 'Poiret One', cursive;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
   font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
-h1,
+h1 {
+  font-family: 'Limelight', cursive;
+  color: #fff;
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); */
+  text-shadow: 0 0 0px #fff, 0 0 7px #fff, 0 0 18px #fff, 0 0 37px #5271ff,
+    0 0 76px #5271ff, 0 0 88px #5271ff, 0 0 95px #5271ff, 0 0 145px #5271ff;
+}
+
 h2,
 h3 {
   font-family: 'Limelight', cursive;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); */
+  text-shadow: 0 0 0px #fff, 0 0 1px #fff, 0 0 8px #fff, 0 0 23px #5271ff,
+    0 0 20px #5271ff, 0 0 20px #5271ff;
 }
 
 /* navigation bar */
@@ -57,14 +77,16 @@ h3 {
   color: var(--white);
   font-size: 1.5rem;
   transition: all 0.7s ease;
-  filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.74));
+  /* filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.74)); */
+  filter: drop-shadow(0 0 0.75rem var(--white));
 }
 
 .nav a:hover {
-  color: var(--light-blue);
+  /* color: var(--light-blue); */
+  color: #f64bff;
   opacity: 0.8;
   transform: rotate(1turn);
-  filter: drop-shadow(0 0 0.75rem rgba(0, 221, 255, 0.74));
+  filter: drop-shadow(0 0 0.75rem #e515f1);
 }
 
 /* envelope open */
@@ -93,7 +115,7 @@ h3 {
 .header {
   color: var(--white);
   margin: 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); */
   width: 100%;
 }
 
@@ -115,12 +137,15 @@ h3 {
 .line {
   height: 0.2rem;
   /* background-color: #f72e44; */
-  background-color: var(--light-blue);
+  /* background-color: var(--light-blue); */
+  background-color: var(--pink);
+  box-shadow: 0px 0px 39px 13px var(--pink);
   display: inline-block;
   width: 85%;
   opacity: 0.8;
   border-radius: 0.15rem;
-  box-shadow: 0px 0px 66px 10px rgb(0 221 255 / 100%);
+  /* box-shadow: 0px 0px 66px 10px rgb(0 221 255 / 100%); */
+  /* box-shadow: 0 0 10px #9521f3, 0 0 40px #c600ee, 0 0 80px #f704f7; */
 }
 
 .links {
@@ -132,12 +157,19 @@ h3 {
 .link a {
   color: var(--white);
   text-decoration: none;
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); */
+  text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 18px #fff, 0 0 37px #5271ff,
+    0 0 76px #5271ff, 0 0 88px #5271ff, 0 0 95px #5271ff, 0 0 145px #5271ff;
 }
 
 .link:hover a {
-  color: var(--light-blue);
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  /* color: var(--light-blue); */
+  color: #fff;
+  /* text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa; */
+  /* text-shadow: 0 0 5px #fff, 0 0 7px #fff, 0 0 18px #fff, 0 0 37px #5271ff,
+    0 0 76px #5271ff, 0 0 88px #5271ff, 0 0 95px #5271ff, 0 0 145px #5271ff; */
+  text-shadow: none;
 }
 
 /* hidden contact form */
@@ -274,7 +306,7 @@ textarea {
 .icon-palmtree {
   position: relative;
   width: 5rem;
-  color: var(--light-blue);
+  /* color: var(--light-blue); */
   filter: drop-shadow(0 0 0.75rem rgba(0, 221, 255, 0.74));
   font-size: 2rem;
   animation: palmtree 8s infinite;
@@ -306,7 +338,7 @@ textarea {
 
 /* About me section */
 .section-id {
-  padding: 0 2rem 2rem 2rem;
+  padding: 2rem 2rem 2rem 2rem;
   margin: 20vh 2rem 2rem 2rem;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -329,7 +361,9 @@ textarea {
   width: 300px;
   margin-left: 3rem;
   height: 1px;
-  background-color: var(--light-blue);
+  /* background-color: var(--light-blue); */
+  background-color: #ff00ff;
+  box-shadow: 0px 0px 6px 2px #ff00ff;
 }
 
 .about-me {
@@ -344,9 +378,12 @@ textarea {
   width: 100%;
   max-width: 250px;
   border-radius: 3rem;
-  box-shadow: 0px 0px 32px 8px rgba(0, 221, 255, 0.6);
-  border: solid var(--light-blue);
-  border-width: 0.4rem;
+  /* box-shadow: 0px 0px 32px 8px rgba(0, 221, 255, 0.6); */
+  /* border: solid var(--light-blue); */
+  /* border: solid #ff00ff; */
+  border: solid var(--pink);
+  box-shadow: 0px 0px 39px 13px var(--blue);
+  border-width: 0.3rem;
   filter: saturate(0.5);
 }
 
@@ -366,7 +403,7 @@ textarea {
 
 .skills-list li::before {
   content: '▹ ';
-  color: var(--light-blue);
+  color: var(--pink);
 }
 
 /* Section projects */
@@ -390,7 +427,9 @@ textarea {
   width: 300px;
   margin-left: 3rem;
   height: 1px;
-  background-color: var(--light-blue);
+  /* background-color: var(--light-blue); */
+  background-color: #ff00ff;
+  box-shadow: 0px 0px 6px 2px #ff00ff;
 }
 
 .project-main {
@@ -409,10 +448,10 @@ textarea {
 .project-image img {
   width: 100%;
   max-width: 500px;
-  box-shadow: 0px 0px 66px 5px rgba(0, 221, 255, 0.8);
+  box-shadow: 0px 0px 66px 5px #5271ff;
   border-radius: 3rem;
-  border: solid var(--light-blue);
-  border-width: 0.4rem;
+  border: solid var(--pink);
+  border-width: 0.3rem;
   cursor: pointer;
 }
 
@@ -437,7 +476,7 @@ textarea {
 }
 
 .project-links a:hover {
-  color: var(--light-blue);
+  color: var(--pink);
   opacity: 0.8;
   transform: rotate(1turn);
 }
@@ -448,8 +487,10 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--blue);
-  box-shadow: inset 0px 0px 66px 5px rgba(0, 221, 255, 0.5);
+  background-color: #231c2a;
+  opacity: 0.8;
+  /* background-color: var(--pink); */
+  /* box-shadow: inset 0px 0px 66px 5px rgba(0, 221, 255, 0.5); */
 }
 
 .footer a {
