@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Poiret+One&display=swap');
+
+/* main content */
+.container-top {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 0 2rem 0 2rem;
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+}
+.header {
+  color: var(--white);
+  margin: 0;
+  width: 100%;
+}
+
+.job {
+  font-size: clamp(45px, 12vw, 100px);
+  margin: 0;
+  letter-spacing: -0.1rem;
+}
+
+.name {
+  margin: 0;
+  font-size: clamp(15px, 3vw, 30px);
+  font-weight: lighter;
+  letter-spacing: 2.5vw;
+}
+
+.line {
+  height: 0.2rem;
+  background-color: var(--pink);
+  box-shadow: 0px 0px 39px 13px var(--pink);
+  display: inline-block;
+  width: 85%;
+  opacity: 0.8;
+  border-radius: 0.15rem;
+}
+
+.links {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link a {
+  color: var(--white);
+  text-decoration: none;
+  text-shadow: 0 0 5px var(--white), 0 0 7px var(--white), 0 0 18px var(--white),
+    0 0 37px var(--blue), 0 0 76px var(--blue), 0 0 88px var(--blue),
+    0 0 95px var(--blue), 0 0 145px var(--blue);
+}
+
+.link:hover a {
+  color: var(--white);
+  text-shadow: none;
+}
+
+/* Animation umbrella */
+/* .animation-palmtree {
+  margin-bottom: 2rem;
+}
+
+.icon-palmtree {
+  position: relative;
+  width: 5rem;
+  color: var(--light-blue);
+  filter: drop-shadow(0 0 0.75rem rgba(0, 221, 255, 0.74));
+  font-size: 2rem;
+  animation: palmtree 8s infinite;
+  animation-direction: alternate;
+} */
+
+/* @keyframes palmtree {
+  0% {
+    transform: rotate(0deg);
+    left: -40%;
+  }
+  25% {
+    transform: rotate(20deg);
+    left: -40%;
+  }
+  50% {
+    transform: rotate(360deg);
+    left: 40%;
+  }
+  70% {
+    transform: rotate(0deg);
+    left: 40%;
+  }
+  100% {
+    transform: rotate(-360deg);
+    left: -40%;
+  }
+} */
+
+/* About me section */
+.section-id {
+  padding: 2rem 2rem 2rem 2rem;
+  margin: 20vh 2rem 2rem 2rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.heading-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.heading {
+  color: var(--white);
+  white-space: nowrap;
+}
+
+.heading-line::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 300px;
+  margin-left: 3rem;
+  height: 1px;
+  /* background-color: var(--light-blue); */
+  background-color: var(--pink);
+  box-shadow: 0px 0px 6px 2px var(--pink);
+}
+
+.about-me {
+  margin-bottom: 2rem;
+  color: var(--white);
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+
+.img-zoom img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 3rem;
+  /* box-shadow: 0px 0px 32px 8px rgba(0, 221, 255, 0.6); */
+  /* border: solid var(--light-blue); */
+  /* border: solid #ff00ff; */
+  border: solid var(--pink);
+  box-shadow: 0px 0px 39px 13px var(--blue);
+  border-width: 0.3rem;
+  filter: saturate(0.5);
+}
+
+.skills {
+  color: var(--white);
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  margin: 20px 0px 0px;
+  padding: 0;
+  color: var(--white);
+  list-style: none;
+}
+
+.skills-list li::before {
+  content: '▹ ';
+  color: var(--pink);
+}
+
+/* Section projects */
+.section-projects {
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.heading-projects {
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  margin-bottom: 3rem;
+  white-space: nowrap;
+}
+
+.heading-projects::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 300px;
+  margin-left: 3rem;
+  height: 1px;
+  /* background-color: var(--light-blue); */
+  background-color: #ff00ff;
+  box-shadow: 0px 0px 6px 2px #ff00ff;
+}
+
+.project-main {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 10px;
+  margin-bottom: 4rem;
+}
+
+.project-content {
+  color: var(--white);
+}
+.project-img-heading {
+  margin-bottom: 1rem;
+}
+.project-image img {
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 0px 66px 5px #5271ff;
+  border-radius: 3rem;
+  border: solid var(--pink);
+  border-width: 0.3rem;
+  cursor: pointer;
+}
+
+.project-image:hover img {
+  opacity: 0.7;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 0 1rem 0;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: var(--light-blue);
+  margin-right: 1rem;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  transition: all 0.7s ease;
+  filter: drop-shadow(0 0 0.75rem rgba(0, 221, 255, 0.99));
+}
+
+.project-links a:hover {
+  color: var(--pink);
+  opacity: 0.8;
+  transform: rotate(1turn);
+}
