@@ -223,6 +223,7 @@ textarea {
   border: solid var(--pink);
   border-width: 0.2em;
   text-shadow: none;
+  box-shadow: none;
   transform: translateY(-0.25em);
 }
 
