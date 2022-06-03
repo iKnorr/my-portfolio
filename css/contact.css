@@ -33,8 +33,8 @@ textarea {
   font-weight: bold;
   /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
   text-shadow: 0 0 0px var(--white), 0 0 7px var(--white), 0 0 18px var(--white),
-    0 0 37px #5271ff, 0 0 76px #5271ff, 0 0 88px #5271ff, 0 0 95px #5271ff,
-    0 0 145px #5271ff;
+    0 0 37px var(--blue), 0 0 76px var(--blue), 0 0 88px var(--blue),
+    0 0 95px var(--blue), 0 0 145px var(--blue);
   box-shadow: inset 0 0 1.5em 0 var(--blue), 0 0 1.5em 0 var(--blue);
   border-radius: 20px;
   background: transparent;

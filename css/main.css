@@ -208,7 +208,7 @@
 .project-image img {
   width: 100%;
   max-width: 500px;
-  box-shadow: 0px 0px 66px 5px #5271ff;
+  box-shadow: 0px 0px 66px 5px var(--blue);
   border-radius: 3rem;
   border: solid var(--pink);
   border-width: 0.3rem;
