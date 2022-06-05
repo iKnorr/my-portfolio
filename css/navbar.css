@@ -83,16 +83,16 @@
 
 .slide-in-top {
   position: relative;
-  animation: slide-in-top 3s;
+  animation: slide-in-top 1.5s;
 }
 
 .slide-in-left {
   position: relative;
-  animation: slide-in-left 3s;
+  animation: slide-in-left 1.5s;
 }
 .slide-in-right {
   position: relative;
-  animation: slide-in-right 3s;
+  animation: slide-in-right 1.5s;
 }
 
 /* envelope open */
