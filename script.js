@@ -33,3 +33,41 @@ const closeContact = function () {
 
 btnCloseContactForm.addEventListener('click', closeContact);
 overlay.addEventListener('click', closeContact);
+
+//Content fade in with scroll
+const projectMain = document.querySelectorAll('.project-main');
+const sectionId = document.querySelector('.section-id');
+
+// About section slide in
+const target = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle('show-id', entry.isIntersecting);
+      if (entry.isIntersecting) target.unobserve(entry.target);
+    });
+    console.log(entries);
+  },
+  {
+    threshold: 0.1,
+  }
+);
+
+target.observe(sectionId);
+
+// Porject section slide in
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle('show', entry.isIntersecting);
+      if (entry.isIntersecting) observer.unobserve(entry.target);
+    });
+    // console.log(entries);
+  },
+  {
+    threshold: 0.2,
+  }
+);
+
+projectMain.forEach(project => {
+  observer.observe(project);
+});

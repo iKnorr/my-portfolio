@@ -111,6 +111,15 @@
   margin: 20vh 2rem 2rem 2rem;
   overflow-y: scroll;
   scroll-behavior: smooth;
+
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.section-id.show-id {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .heading-line {
@@ -210,6 +219,15 @@
   grid-template-columns: 2fr 2fr;
   gap: 10px;
   margin-bottom: 4rem;
+
+  transform: translateX(200px);
+  opacity: 0;
+  transition: 1s;
+}
+
+.project-main.show {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .project-content {
