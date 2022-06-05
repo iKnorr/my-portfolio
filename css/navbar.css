@@ -5,6 +5,23 @@
   align-items: center;
 }
 
+.light-bulb {
+  color: var(--white);
+  filter: drop-shadow(0 0 2px var(--white)) drop-shadow(0 0 5px var(--white))
+    drop-shadow(0 0 15px var(--blue)) drop-shadow(0 0 20px var(--blue))
+    drop-shadow(0 0 30px var(--blue));
+  transition: ease-in-out 0.15s;
+}
+
+.light-bulb:hover {
+  transform: scale(1.2);
+}
+
+.light-bulb-off {
+  color: red;
+  filter: none;
+}
+
 .nav a {
   margin: 1rem 2.5rem;
   text-decoration: none;
@@ -23,15 +40,70 @@
   filter: drop-shadow(0 0 0.75rem #e515f1);
 }
 
+.light-bulb {
+  color: var(--white);
+  margin: 1rem 2.5rem;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.light-bulb:hover {
+  cursor: pointer;
+}
+
+@keyframes slide-in-top {
+  from {
+    opacity: 0;
+    /* top: -400px; */
+    top: -10rem;
+  }
+  to {
+    top: 0px;
+  }
+}
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    left: -20rem;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    right: -20rem;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+.slide-in-top {
+  position: relative;
+  animation: slide-in-top 3s;
+}
+
+.slide-in-left {
+  position: relative;
+  animation: slide-in-left 3s;
+}
+.slide-in-right {
+  position: relative;
+  animation: slide-in-right 3s;
+}
+
 /* envelope open */
 .open-envelope .open {
   display: none;
 }
 
-.open-envelope:hover .close {
+/* .open-envelope:hover .close {
   display: none;
 }
 
 .open-envelope:hover .open {
   display: block;
-}
+} */

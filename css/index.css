@@ -55,9 +55,6 @@ h1 {
   font-family: 'Limelight', cursive;
   color: var(--white);
   /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); */
-  text-shadow: 0 0 0px var(--white), 0 0 7px var(--white), 0 0 18px var(--white),
-    0 0 37px var(--blue), 0 0 76px var(--blue), 0 0 88px var(--blue),
-    0 0 95px var(--blue), 0 0 145px var(--blue);
 }
 
 h2,
@@ -65,8 +62,8 @@ h3 {
   font-family: 'Limelight', cursive;
   color: var(--white);
   /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); */
-  text-shadow: 0 0 0px var(--white), 0 0 1px var(--white), 0 0 8px var(--white),
-    0 0 23px var(--blue), 0 0 20px var(--blue), 0 0 20px var(--blue);
+  /* text-shadow: 0 0 0px var(--white), 0 0 1px var(--white), 0 0 8px var(--white),
+    0 0 23px var(--blue), 0 0 20px var(--blue), 0 0 20px var(--blue); */
 }
 
 /* Media Queries bout section*/

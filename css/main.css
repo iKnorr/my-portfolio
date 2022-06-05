@@ -18,6 +18,10 @@
   font-size: clamp(45px, 12vw, 100px);
   margin: 0;
   letter-spacing: -0.1rem;
+  text-shadow: 0 0 0px var(--white), 0 0 7px var(--white), 0 0 18px var(--white),
+    0 0 37px var(--blue), 0 0 76px var(--blue), 0 0 88px var(--blue),
+    0 0 95px var(--blue), 0 0 145px var(--blue);
+  transition: ease-in-out 0.15s;
 }
 
 .name {
@@ -25,6 +29,13 @@
   font-size: clamp(15px, 3vw, 30px);
   font-weight: lighter;
   letter-spacing: 2.5vw;
+  text-shadow: 0 0 0px var(--white), 0 0 1px var(--white), 0 0 8px var(--white),
+    0 0 23px var(--blue), 0 0 20px var(--blue), 0 0 20px var(--blue);
+  transition: ease-in-out 0.15s;
+}
+
+.lights-on-off {
+  text-shadow: none;
 }
 
 .line {
@@ -109,6 +120,8 @@
 }
 .heading {
   color: var(--white);
+  text-shadow: 0 0 0px var(--white), 0 0 1px var(--white), 0 0 8px var(--white),
+    0 0 23px var(--blue), 0 0 20px var(--blue), 0 0 20px var(--blue);
   white-space: nowrap;
 }
 
@@ -174,6 +187,8 @@
   display: flex;
   align-items: center;
   color: var(--white);
+  text-shadow: 0 0 0px var(--white), 0 0 1px var(--white), 0 0 8px var(--white),
+    0 0 23px var(--blue), 0 0 20px var(--blue), 0 0 20px var(--blue);
   margin-bottom: 3rem;
   white-space: nowrap;
 }
@@ -201,6 +216,8 @@
   color: var(--white);
 }
 .project-img-heading {
+  text-shadow: 0 0 0px var(--white), 0 0 1px var(--white), 0 0 8px var(--white),
+    0 0 23px var(--blue), 0 0 20px var(--blue), 0 0 20px var(--blue);
   margin-bottom: 1rem;
 }
 .project-image img {
