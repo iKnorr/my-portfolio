@@ -37,7 +37,7 @@
   color: #f64bff;
   opacity: 0.8;
   transform: rotate(1turn);
-  filter: drop-shadow(0 0 0.75rem #e515f1);
+  filter: drop-shadow(0 0 0.75rem var(--white));
 }
 
 .light-bulb {

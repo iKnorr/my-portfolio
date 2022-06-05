@@ -17,7 +17,6 @@ btnLightsOff.addEventListener('click', function () {
   job.classList.toggle('lights-on-off');
   nameHeader.classList.toggle('lights-on-off');
   btnLightsOff.classList.toggle('light-bulb-off');
-  console.log('hello world');
 });
 
 // Open contact form
