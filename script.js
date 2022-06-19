@@ -1,5 +1,12 @@
 'use strict';
 
+//preloader
+const preloader = document.querySelector('.loader');
+
+window.onload = function () {
+  preloader.style.display = 'none';
+};
+
 // Setting variables
 const overlay = document.querySelector('.overlay');
 const cardContact = document.querySelector('.card-contact');
@@ -36,7 +43,7 @@ overlay.addEventListener('click', closeContact);
 
 //Content fade in with scroll
 const projectMain = document.querySelectorAll('.project-main');
-const sectionId = document.querySelector('.section-id');
+const idMain = document.querySelector('.id-main');
 
 // About section slide in
 const target = new IntersectionObserver(
@@ -52,7 +59,7 @@ const target = new IntersectionObserver(
   }
 );
 
-target.observe(sectionId);
+target.observe(idMain);
 
 // Porject section slide in
 const observer = new IntersectionObserver(

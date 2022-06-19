@@ -1,0 +1,29 @@
+.loader {
+  background-color: #251a30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+}
+
+.preloader {
+  height: 5rem;
+  width: 5rem;
+  border: 5px solid var(--pink);
+  background: transparent;
+  box-shadow: inset 0px 0px 15px 1px var(--pink), 0px 0px 15px 1px var(--pink);
+  animation: loading 2.5s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(-360deg);
+  }
+}

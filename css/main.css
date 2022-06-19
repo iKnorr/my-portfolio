@@ -112,12 +112,18 @@
   overflow-y: scroll;
   scroll-behavior: smooth;
 
-  transform: translateX(-200px);
+  /* transform: translateX(-200px);
   opacity: 0;
-  transition: 1s;
+  transition: 1s; */
 }
 
-.section-id.show-id {
+.id-main {
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.id-main.show-id {
   transform: translateX(0);
   opacity: 1;
 }
@@ -222,7 +228,7 @@
 
   transform: translateX(200px);
   opacity: 0;
-  transition: 1s;
+  transition: 1.5s;
 }
 
 .project-main.show {
