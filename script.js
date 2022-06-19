@@ -4,7 +4,9 @@
 const preloader = document.querySelector('.loader');
 
 window.onload = function () {
-  preloader.style.display = 'none';
+  setTimeout(function () {
+    preloader.style.display = 'none';
+  }, 1700);
 };
 
 // Setting variables

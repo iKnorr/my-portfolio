@@ -55,17 +55,38 @@
 @keyframes slide-in-top {
   from {
     opacity: 0;
-    /* top: -400px; */
-    top: -10rem;
+    top: -40rem;
   }
   to {
     top: 0px;
   }
 }
+
+@keyframes slide-in-top-main {
+  from {
+    opacity: 0;
+    top: -100rem;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes slide-in-bottom {
+  from {
+    opacity: 0;
+    /* top: -400px; */
+    bottom: -100rem;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
 @keyframes slide-in-left {
   from {
     opacity: 0;
-    left: -20rem;
+    left: -100rem;
   }
   to {
     left: 0px;
@@ -74,7 +95,7 @@
 @keyframes slide-in-right {
   from {
     opacity: 0;
-    right: -20rem;
+    right: -100rem;
   }
   to {
     right: 0px;
@@ -83,16 +104,29 @@
 
 .slide-in-top {
   position: relative;
-  animation: slide-in-top 1.5s;
+  animation: slide-in-top 5.5s;
+}
+
+.slide-in-top-main {
+  position: relative;
+  animation: slide-in-top 4.5s;
+}
+
+.slide-in-bottom {
+  position: relative;
+  animation: slide-in-bottom 4.5s;
+  /* animation-delay: 2s; */
 }
 
 .slide-in-left {
   position: relative;
-  animation: slide-in-left 1.5s;
+  animation: slide-in-left 4.5s;
+  /* animation-delay: 2s; */
 }
 .slide-in-right {
   position: relative;
-  animation: slide-in-right 1.5s;
+  animation: slide-in-right 4.5s;
+  /* animation-delay: 2s; */
 }
 
 /* envelope open */
