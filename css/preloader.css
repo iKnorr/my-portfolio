@@ -16,14 +16,19 @@
   align-items: center;
 }
 
-.loader-content p {
-  margin-top: 1.5rem;
-  color: var(--white);
+.preloader-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--pink);
+  text-shadow: 0 0 0px var(--white), 0 0 2px var(--white), 0 0 8px var(--white),
+    0 0 23px var(--blue), 0 0 28px var(--blue), 0 0 30px var(--blue);
 }
 
 .preloader {
-  height: 5rem;
-  width: 5rem;
+  height: 7rem;
+  width: 7rem;
   border: 5px solid var(--pink);
   background: transparent;
   box-shadow: inset 0px 0px 15px 1px var(--pink), 0px 0px 15px 1px var(--pink);

@@ -9,13 +9,6 @@ window.onload = function () {
   }, 1700);
 };
 
-// Setting variables
-const overlay = document.querySelector('.overlay');
-const cardContact = document.querySelector('.card-contact');
-
-const btnOpenContactForm = document.querySelector('.open-contact-form');
-const btnCloseContactForm = document.querySelector('.close-contact-form');
-
 // Lights off/on
 const job = document.querySelector('.job');
 const nameHeader = document.querySelector('.name');
@@ -27,6 +20,13 @@ btnLightsOff.addEventListener('click', function () {
   nameHeader.classList.toggle('lights-on-off');
   btnLightsOff.classList.toggle('light-bulb-off');
 });
+
+// Setting variables for contact form
+const overlay = document.querySelector('.overlay');
+const cardContact = document.querySelector('.card-contact');
+
+const btnOpenContactForm = document.querySelector('.open-contact-form');
+const btnCloseContactForm = document.querySelector('.close-contact-form');
 
 // Open contact form
 btnOpenContactForm.addEventListener('click', function () {
