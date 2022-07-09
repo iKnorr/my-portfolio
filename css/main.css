@@ -1,5 +1,6 @@
 /* main content */
 .container-top {
+  overflow: hidden;
   display: grid;
   justify-content: center;
   align-content: center;
