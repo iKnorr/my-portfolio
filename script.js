@@ -16,8 +16,8 @@ const btnLightsOff = document.querySelector('.light-bulb');
 
 // Turn lights off
 btnLightsOff.addEventListener('click', function () {
-  job.classList.toggle('lights-on-off');
-  nameHeader.classList.toggle('lights-on-off');
+  job.classList.toggle('lights-on-off-name');
+  nameHeader.classList.toggle('lights-on-off-job');
   btnLightsOff.classList.toggle('light-bulb-off');
 });
 

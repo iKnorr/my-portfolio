@@ -19,9 +19,10 @@
   font-size: clamp(45px, 12vw, 100px);
   margin: 0;
   letter-spacing: -0.1rem;
-  text-shadow: 0 0 0px var(--white), 0 0 7px var(--white), 0 0 18px var(--white),
+  text-shadow: none;
+  /* text-shadow: 0 0 0px var(--white), 0 0 7px var(--white), 0 0 18px var(--white),
     0 0 37px var(--blue), 0 0 76px var(--blue), 0 0 88px var(--blue),
-    0 0 95px var(--blue), 0 0 145px var(--blue);
+    0 0 95px var(--blue), 0 0 145px var(--blue); */
   transition: ease-in-out 0.15s;
 }
 
@@ -30,13 +31,21 @@
   font-size: clamp(15px, 3vw, 30px);
   font-weight: lighter;
   letter-spacing: 2.5vw;
-  text-shadow: 0 0 0px var(--white), 0 0 1px var(--white), 0 0 8px var(--white),
-    0 0 23px var(--blue), 0 0 20px var(--blue), 0 0 20px var(--blue);
+  /* text-shadow: 0 0 0px var(--white), 0 0 1px var(--white), 0 0 8px var(--white),
+    0 0 23px var(--blue), 0 0 20px var(--blue), 0 0 20px var(--blue); */
+  text-shadow: none;
   transition: ease-in-out 0.15s;
 }
 
-.lights-on-off {
-  text-shadow: none;
+.lights-on-off-job {
+  text-shadow: 0 0 0px var(--white), 0 0 7px var(--white), 0 0 18px var(--white),
+    0 0 37px var(--blue), 0 0 76px var(--blue), 0 0 88px var(--blue),
+    0 0 95px var(--blue), 0 0 145px var(--blue);
+}
+
+.lights-on-off-name {
+  text-shadow: 0 0 0px var(--white), 0 0 1px var(--white), 0 0 8px var(--white),
+    0 0 23px var(--blue), 0 0 20px var(--blue), 0 0 20px var(--blue);
 }
 
 .line {
@@ -164,7 +173,7 @@
 .img-zoom img {
   width: 100%;
   max-width: 250px;
-  border-radius: 3rem;
+  border-radius: 50%;
   /* box-shadow: 0px 0px 32px 8px rgba(0, 221, 255, 0.6); */
   /* border: solid var(--light-blue); */
   /* border: solid #ff00ff; */
