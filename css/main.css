@@ -163,7 +163,8 @@
 }
 
 .about-me {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+  /* margin-bottom: 2rem; */
   color: var(--white);
   display: grid;
   grid-template-columns: 3fr 2fr;
